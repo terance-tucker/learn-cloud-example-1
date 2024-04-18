@@ -1,0 +1,225 @@
+/* =======================================================
+   Import Montserrat Font
+   Remove if we need to use Segoe UI
+   ======================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* =======================================================
+   Basic Tag Styles
+   ======================================================= */
+
+body {
+    font-family: montserrat, segoe ui, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    width: 100%;
+    --x: 0px;
+    --y: 0px;
+    background-image: url('images/main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 110%; 
+    background-position: var(--x) var(--y);
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1, h2 {
+    margin: 0px;
+    padding: 0;
+}
+
+h1 {
+    font-size: 110px;
+    line-height: 80%;
+    width:0px;
+    display:block;
+    white-space:break-all;
+    text-shadow: #00000052 1px 0 30px;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 80%;
+    margin-top: 5px;
+}
+
+p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input, textarea {
+    margin: 4px 0px 16px 0px;
+    display: block;
+    width: 100%;
+
+}
+
+input {
+    height: 28px;
+}
+
+textarea {
+height: 60px;
+}
+
+input[type="submit"] {
+    width: 120px;
+    padding: 8px;
+    color: #000000;
+    border: 0;
+    height: auto;
+    background-color: #FBB600;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #9c7300;
+}
+
+form {
+    display: inline-block;
+    margin: auto;
+    text-align: left;
+    width: 400px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+}
+/* =======================================================
+   Content Containers styles
+   Positions the Main Title "My First Portfilio".
+   Positions project cards. 
+   ======================================================= */
+.form-button {
+    background-color: #00000040;
+    padding: 10px 20px;
+    margin: 30px 6px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #00000070;
+    cursor: pointer;
+}
+
+.container-1 {
+    background-image:url("images/ball.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 60px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.container-2 {
+    position:absolute;
+    bottom: 36px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 4;
+    width: 100%;
+    height: 370px;
+    gap: 0px 26px;
+    padding: 0 76px;
+}
+
+/* =======================================================
+   Project styles
+   ======================================================= */
+.project {
+    box-sizing: border-box;
+    height: 170px;
+    background-color: #00000070;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding: 20px;
+    color: #ffffff;
+    border: 8px solid #ffffff;
+    flex-grow:1;
+    transform-origin: bottom;
+    transition: height 0.3s ease;
+    align-self: flex-end;
+    background-position: center;
+}
+
+project:hover {
+    cursor: pointer;
+}
+
+.project:nth-child(1):hover {
+    height: 370px;
+    transform-origin: bottom;
+    transition: height 0.3s ease;
+    background-image:url("images/project-1.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    cursor: pointer;
+}
+
+.project:nth-child(2):hover {
+    height: 370px;
+    transform-origin: bottom;
+    transition: height 0.3s ease;
+    background-image:url("images/project-2.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    cursor: pointer;
+}
+
+.project:nth-child(3):hover {
+    height: 370px;
+    transform-origin: bottom;
+    transition: height 0.3s ease;
+    background-image:url("images/project-3.png"), linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    cursor: pointer;
+}
+
+
+
+/* =======================================================
+   Contact Form Styles
+   ======================================================= */
+
+.contact {
+    position: absolute;
+    bottom: -450px;
+    width: 100%;
+    background-color: #032633;
+    padding: 40px;
+    color: #FFFFFF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contact h2 {
+    color: #FBB600;
+}
+
+button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #FBB600;
+    border: 0;
+    padding: 4px 4px;
+    width: 24px;
+    border-radius: 2px;    
+}
+
+button:hover {
+    background-color: #9c7300;
+    cursor: pointer;
+}
